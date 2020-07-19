@@ -7,22 +7,3 @@ Application::Application(std::string title)
 {
 	this->title = title;
 }
-
-void Application::run()
-{
-	while (window.isOpen())
-	{
-		SDL_Event event;
-		while (SDL_PollEvent(&event))
-		{
-			ImGui_ImplSDL2_ProcessEvent(&event);
-			if ((event.type == SDL_QUIT) || (event.type == SDL_WINDOWEVENT && event.window.event == SDL_WINDOWEVENT_CLOSE
-				&& event.window.windowID == SDL_GetWindowID(window.getSDLWindow())))
-			{
-				window.setClose();
-			}
-		}
-		//frame.draw();
-		window.render();
-	}
-}

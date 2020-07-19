@@ -6,7 +6,7 @@ set(
         SRC
         controller/application.cpp
         view/window.cpp
-        view/frame.cpp)
+        view/frame.cpp controller/chess_2.cpp ../include/controller/chess_2.hpp)
 set(SRC ${SRC})
 
 include_directories(../include BINARY)

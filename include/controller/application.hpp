@@ -9,13 +9,13 @@
 class Application
 {
 private:
+protected:
 	std::string title;
 	Window window;
-protected:
 public:
 	Application(std::string title);
 
-	void run();
+	virtual void run() = 0;
 };
 
 
