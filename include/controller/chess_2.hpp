@@ -9,7 +9,7 @@ class Chess2 : public Application
 private:
 protected:
 public:
-	Chess2(const std::string &title);
+	Chess2(const std::string &title, int height, int width);
 
 	void run() override;
 };
